@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arunavo Chowdhury</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============================================================
+   NAVBAR
+   Fixed to the top, with a subtle shadow. Hamburger menu for mobile.
+   Links scroll to sections on the page.
+============================================================ -->
+<header>
+  <nav id="navbar">
+    <div class="nav-name">AC.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      
+      <li><a href="./resume.pdf" target="_blank" rel="noopener" class="nav-resume">Resume ↗</a></li>
+    </ul>
+    
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ============================================================
+   HERO SECTION
+   Full viewport height, centered content.
+============================================================ -->
+<main>
+  <section id="hero">
+    <div class="hero-content">
+      
+      <p class="hero-eyebrow">// cs student & builder</p>
+      <h1 class="hero-name">Arunavo Chowdhury</h1>
+      
+      <div class="hero-tags">
+        <span class="hero-tag">Aspiring Software Engineer</span>
+        <span class="hero-tag-sep">·</span>
+        <span class="hero-tag">Web Developer</span>
+        <span class="hero-tag-sep">·</span>
+        <span class="hero-tag">AI Enthusiast</span>
+      </div>
+    </div>
+    <!-- animated cursor blink -->
+    <div class="hero-cursor" aria-hidden="true">_</div>
+  </section>
+
+  <!-- ============================================================
+   ABOUT SECTION
+   Two-column layout: left is text, right is skills grid.
+   Skills grid has categories and tags for each skill.
+  ============================================================ -->
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm currently a senior student at Queens College, majoring in Computer Science. I'm passionate about learning new technologies and I am currently focused on learning backend, AI, and web development.
+          </p>
+          <p>
+            I work across the stack, web apps, AI integrations, data dashboards, and
+            whatever the project calls for. 
+          </p>
+          <div class="hero-ctas" style="margin-top: 1.5rem;">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            <a href="./resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume ↗</a>
+          </div>
+        </div>
+        <div class="about-skills">
+          <p class="skills-label">// things I work with</p>
+
+          <div class="skills-category">
+            <span class="skills-category-label">Languages</span>
+            <div class="skills-grid">
+              <span class="skill-tag">HTML & CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <span class="skills-category-label">Frameworks & Tools</span>
+            <div class="skills-grid">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">Git & GitHub</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <span class="skills-category-label">AI / ML</span>
+            <div class="skills-grid">
+              <span class="skill-tag">LlamaIndex</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">PyMuPDF</span>
+              <span class="skill-tag">Tesseract OCR</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <span class="skills-category-label">Cloud & Data</span>
+            <div class="skills-grid">
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">Supabase</span>
+              <span class="skill-tag">Render</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Netlify</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+   EXPERIENCE SECTION
+   Timeline layout with entries for each role. Each entry has:
+   role, company, date, location, bullet points, and tech tags.
+  ============================================================ -->
+  <section id="experience">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> Experience</h2>
+      <div class="timeline">
+
+        
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Automation Intern</h3>
+                <p class="timeline-company">Outamation</p>
+              </div>
+              <span class="timeline-date">May 2025 – Jul 2025</span>
+            </div>
+            <p class="timeline-location">Remote, New York, NY</p>
+            <ul class="timeline-points">
+              <li>Built AI workflows that cut mortgage document review time by 30% — using Python, NLP, and OCR (PyMuPDF, Tesseract) to classify and extract data automatically.</li>
+              <li>Improved document search accuracy by 25% by building a RAG pipeline with LlamaIndex.</li>
+              <li>Boosted classification accuracy by 15% by benchmarking and fine-tuning open-source models like DocLLM and LayoutLM.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Python</span>
+              <span class="tag">NLP</span>
+              <span class="tag">OCR</span>
+              <span class="tag">LlamaIndex</span>
+              <span class="tag">LangChain</span>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Web3 Data Analyst Intern</h3>
+                <p class="timeline-company">Webacy</p>
+              </div>
+              <span class="timeline-date">Aug 2024 – Sep 2024</span>
+            </div>
+            <p class="timeline-location">Remote, New York, NY</p>
+            <ul class="timeline-points">
+              <li>Found 5 key vulnerability patterns in smart contracts using clustering and correlation analysis across 10+ risk tags — improving risk modeling by 20%.</li>
+              <li>Analyzed and labeled vulnerabilities in 5 smart contracts, cutting labeling errors by 15%.</li>
+              <li>Validated peer labels across 50+ entries, achieving 100% consistency across the dataset.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Web3</span>
+              <span class="tag">Smart Contracts</span>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">UI/UX Design Intern</h3>
+                <p class="timeline-company">Art Beyond Sight</p>
+              </div>
+              <span class="timeline-date">Jul 2024 – Aug 2024</span>
+            </div>
+            <p class="timeline-location">Remote, New York, NY</p>
+            <ul class="timeline-points">
+              <li>Improved website accessibility for 100+ users by aligning the site with WCAG 2.1 standards.</li>
+              <li>Designed and prototyped 5 new site sections in Canva, working across teams to keep everything inclusive and intuitive.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">UI/UX</span>
+              <span class="tag">WCAG 2.1</span>
+              <span class="tag">Canva</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+   PROJECTS SECTION
+   Grid layout with cards for each project. Each card has:
+   project name, description, tech tags, and links to live/demo.
+  ============================================================ -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> Projects</h2>
+      <div class="projects-grid">
+
+        
+        <div class="project-card">
+          <img src="assets/LaxMovies.png" alt="LaxMovies project screenshot" class="project-image" />
+          <div class="project-header">
+            <span class="project-number">01</span>
+            <div class="project-links">
+              <a href="https://laxmovies.netlify.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live demo">Live ↗</a>
+              <a href="https://github.com/iamarunavo/MovieList" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">GitHub ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">LaxMovies</h3>
+          <p class="project-desc">
+            Browse over 500,000 movies, save your favorites, and sign in with Google or email.
+            Built with React and Firebase, pulling live data from the TMDB API — deployed on Netlify.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">TMDB API</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+        </div>
+
+        
+        <div class="project-card">
+          <img src="assets/FitnessTrainerAI.png" alt="FitnessTrainerAI project screenshot" class="project-image" />
+          <div class="project-header">
+            <span class="project-number">02</span>
+            <div class="project-links">
+              <a href="https://github.com/Prainex/personal-trainer-ai" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">GitHub ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">FitnessTrainerAI</h3>
+          <p class="project-desc">
+            A chatbot that builds you a personalized fitness plan on the spot.
+            Powered by Gemini AI — just tell it your goals and it adapts the plan to you.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Gemini AI</span>
+          </div>
+        </div>
+
+        
+        <div class="project-card">
+          <img src="assets/BlackScholesModel.png" alt="BlackScholes project screenshot" class="project-image" />
+          <div class="project-header">
+            <span class="project-number">03</span>
+            <div class="project-links">
+              <a href="https://github.com/iamarunavo/BlackScholes" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">GitHub ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">BlackScholes Dashboard</h3>
+          <p class="project-desc">
+            An interactive dashboard for options pricing using the Black-Scholes model.
+            Plug in real-time stock data and visualize Greeks, heatmaps, and sensitivity plots.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Yahoo Finance API</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+   CONTACT SECTION
+   Two-column layout: left is a contact form, right is a GitHub button.
+  ============================================================ -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="accent">//</span> Contact</h2>
+      <p class="contact-intro">Feel free to reach out about anything.</p>
+
+      <div class="contact-grid">
+        <!-- Contact form -->
+        <div class="contact-form-wrapper">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="What's on your mind?"></textarea>
+          </div>
+          <button class="btn btn-primary" id="send-btn">Send Message</button>
+          <!-- Status message shown after form submission -->
+          <p class="form-status" id="form-status"></p>
+        </div>
+
+        <!-- Github button -->
+        <div class="contact-aside">
+          <p class="aside-label">// or find me on</p>
+          <a href="https://github.com/iamarunavo" target="_blank" rel="noopener" class="github-btn">
+            <!-- SVG GitHub icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/arunavo-chowdhury/" target="_blank" rel="noopener" class="github-btn">
+              <!-- SVG LinkedIn icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <p>Built by Arunavo Chowdhury &mdash; <span class="accent">2026</span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
