@@ -138,7 +138,8 @@ Users receive feedback through instantaneous visual cues that acknowledge their 
 
 **5. How does interactivity improve the user experience?**
 
-Interactivity keeps users engaged by making the website easy to use. 
+Interactivity keeps users engaged by making the website easy to use.
+
 ---
 
 ## Project Overview
