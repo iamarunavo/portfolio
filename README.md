@@ -235,4 +235,4 @@ Content is organized to tell a little bit about me, first from who I am, to what
 | HTML | ✅ Complete |
 | CSS | ✅ Complete |
 | JavaScript | ✅ Complete |
-| Deployed to GitHub Pages | 
+| Deployed to GitHub Pages | ✅ Complete |
